@@ -22,11 +22,11 @@
 
 * Below graph shows a sample image data before and after pre-processing:
 
-Raw Images:
-![RawImages](https://user-images.githubusercontent.com/61121277/214109773-9f22bee7-e258-443e-968a-9258c30a9e3f.png)
-Processed Images:
-![ProcessedImages](https://user-images.githubusercontent.com/61121277/214109823-50860662-402e-41d2-a2c1-51c5223fcac1.png)
+**Raw Images:**
+![RawImages](https://user-images.githubusercontent.com/61121277/214113785-859bb596-848a-4ec1-aa8d-f0c849146e1a.png)
 
+**Processed Images:**
+![ProcessedImages](https://user-images.githubusercontent.com/61121277/214109823-50860662-402e-41d2-a2c1-51c5223fcac1.png)
 
 ## Modeling
 ***
