@@ -11,15 +11,14 @@
 ## Data Understanding
 ***
 * The data was obtained from [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/). 
-
 * The data involved chest X-ray images from 5,863 pediatric patients separated by the image categories that they belong to (Pneumonia/Normal). 
 
 ## Preprocessing:
 ***
-* The data was split into train (80%), test (10%), validation (10%) sets.
-* All images are downsized to a size of 128 x 128 pixels.
-* Pixels values (0-255) normalized to 0-1.
-* Converted to Grayscale.
+- The data was split into train (80%), test (10%), validation (10%) sets.
+- All images are downsized to a size of 128 x 128 pixels.
+- Pixels values (0-255) normalized to 0-1.
+- Converted to Grayscale.
 
 * Below graph shows a sample image data before and after pre-processing:
 
@@ -31,7 +30,6 @@ Processed Images:
 
 ## Modeling
 ***
-
 Several types of naural networks were built, tuned and validated:
 
     - Baseline Artificial Neural Network ANN - fully connected multilayer perceptron (MLP) 
@@ -43,47 +41,27 @@ Several types of naural networks were built, tuned and validated:
     - Transfer Learning with ResNest50V2
 
 ## Evaluation
-4. Scoring Metric: Accuracy was used to be evaluated by the model during training, and recall values especailly for the pneumonia class were taken into 
- consideration for model evaluation during testing. 
+**Scoring Metric**: **Accuracy** was used to be evaluated by the model during training, and **recall** values especailly for the pneumonia class were taken into consideration for model evaluation during testing. 
 
 
 ## Evaluation
 ***
 
-![Compare_RocCurve_Models](https://user-images.githubusercontent.com/61121277/199509396-629dd8df-bbb7-4715-85b8-e7626bf4c289.png)
 
 * **CNN with Dropout regularization** gives the best performance on both train (tells if model is confident in it’s learning) and test datasets (tells if the results are negeralizable to an unknown dataset). 
 * 
 * It gives Roc_Auc values of 88% (on Train) and 87% (on test), which is considered **GOOD**.
 
 
-![XGB_Results1](https://user-images.githubusercontent.com/61121277/199540455-5f1c29eb-cead-421f-bae3-2dad7efe6304.png)
-![XGB_Results2](https://user-images.githubusercontent.com/61121277/199540456-eebd5573-1875-47c2-8501-edcb9ef0633b.png)
-
 * Results from the best fitting model on the test set are:
     - **accuracy score of 79%**, 
     - **sensitivity/recall score of 79%** 
     - **specificity score of 82%** 
 
-![XGBoost_FeatureImportance](https://user-images.githubusercontent.com/61121277/199292805-566c278c-e1e8-4a4a-b643-044569ce0812.png)
 
 
-## Conclusion
-***
-
-![MostImportantFeatures_Probability_BarPlot](https://user-images.githubusercontent.com/61121277/199609041-e03dd4f4-2340-4512-a684-608f90204cc6.png)
-
-You are more likely to get the vaccine if you:
-
-- have a doctor recommending the vaccine
-- have health insurance
-- think the vaccine is effective
-- think you can get sick from flu
-- are older, especially +65
-- are a health worker
    
 ## Recommendations for use of CNN to classify x-ray images:
-
 ***
 * Stream-line the diagnosing process  quicker return time and greater patient satisfaction.
 * Begin the treatment right away for patients classified as high-risk.
