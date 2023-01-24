@@ -41,7 +41,7 @@ Several types of naural networks were built, tuned and validated:
 **Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
 * All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
-![CNN_train_val_accuracy](https://user-images.githubusercontent.com/61121277/214377459-78264939-0c07-4d02-aac2-3ce4282b54d6.png)
+![CompareModels_train_val_acc](https://user-images.githubusercontent.com/61121277/214378393-93dd8b02-2047-4cdb-981e-b8f51668751b.png)
 
 * All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.  ![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/214377538-db24f824-5c7e-4e6c-a823-d6afe2f3010a.png)
 
@@ -51,6 +51,7 @@ Several types of naural networks were built, tuned and validated:
     - overall accuracy score of 97%, 
     - recall score of 94% for class normal, and 98% for class pneumonia 
     - f1 score of 94% for class normal, and 98% for class pneumonia
+   
 ## Visualize Features:
 * Below is the visualization of the 25th channel for each of the activation layers. (Recall that there are more channels in later layers. 
 * Later layers are more abstract representations. This demonstrates how the representations learned by CNN architectures become increasingly abstract with the depth of the layers.
