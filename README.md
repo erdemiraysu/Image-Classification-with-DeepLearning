@@ -40,12 +40,23 @@ Several types of naural networks were built, tuned and validated:
 ## Evaluation
 **Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
-All models performed similarly well.**CNN with dropout regularization and a slightly lower learning rate** was chosen as the final modelsince it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
+* All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
 
-* Results on the test set are:
-    - **overall accuracy score of 97%**, 
-    - **recall score of 94% for class normal, and 98% for class pneumonia** 
-    - **f1 score of 94% for class normal, and 98% for class pneumonia** 
+
+
+
+
+* All models reached overall accuracy levels of 94-94% and recall values of 96-98% for the pneumonia cases for the tets set.  
+
+
+
+
+**CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
+
+* Using tuned CNN results on the test set were:
+    - overall accuracy score of 97%, 
+    - recall score of 94% for class normal, and 98% for class pneumonia 
+    - f1 score of 94% for class normal, and 98% for class pneumonia
 
    
 ## Recommendations for use of CNN to classify x-ray images:
