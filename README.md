@@ -75,7 +75,6 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
 ## Repository Structure
     .
     ├── images 
-    ├── data 
     ├── Notebook.ipynb     
     ├── Notebook.pdf 
     ├── Presentation.pdf                                             
