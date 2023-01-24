@@ -56,15 +56,15 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
     - f1 score of 94% for class normal, and 98% for class pneumonia
    
 ## Visualize Features:
-* Below is the visualization of the 25th channel for each of the activation layers. (Recall that there are more channels in later layers. 
-* Later layers are more abstract representations. This demonstrates how the representations learned by CNN architectures become increasingly abstract with the depth of the layers.
+* Below is the visualization of the 25th channel for each of the activation layers of the CNN architecture. 
+* As can be seen later layers are more abstract representations. This demonstrates how the representations learned by CNN architectures become increasingly abstract with the depth of the layers.
 ![ActivationChannels](https://user-images.githubusercontent.com/61121277/214377645-737d9135-0297-459f-807f-ec541cca8591.png)
     
 ## Recommendations for use of CNN to classify x-ray images:
 ***
 * Stream-line the diagnosing process which leads to quicker return time and greater patient satisfaction.
 * Begin the treatment right away for patients classified as high-risk.
-* Have doctors to allocate time to go over the images that fall into the grey zone more rigorously, and for more demanding and complex procedures in general.
+* Doctors/radiologists can allocate more time to go over the images that fall into the grey zone more rigorously, and for more demanding and complex procedures in general.
 
 ## Limitations and Improvements
 ***
