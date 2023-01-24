@@ -32,30 +32,25 @@
 ***
 Several types of naural networks were built, tuned and validated:
 
-    - Baseline Artificial Neural Network ANN - fully connected multilayer perceptron (MLP) 
-    - Deeper Artificial Neural Network ANN 
-    - Baseline Convolutional Neural Network - subtype of NN mainly used for applications in image/speech recognition.
-    - Deeper Convolutional Neural Network
-    - Tuned Convolutional Neural Network(s)
+    - Artificial Neural Network ANN 
+    - Convolutional Neural Network 
     - Transfer Learning with VGG16
     - Transfer Learning with ResNest50V2
 
 ## Evaluation
-**Scoring Metric**: **Accuracy** was used to be evaluated by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation during testing. 
+**Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
-All models performed exceptionally well.**CNN with Dropout regularization and a lower learning rate** gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
+All models performed similarly well.**CNN with dropout regularization and a slightly lower learning rate** was chosen as the final modelsince it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
 * Results on the test set are:
-    - **accuracy score of 79%**, 
-    - **sensitivity/recall score of 79%** 
-    - **specificity score of 82%** 
-
-
+    - **overall accuracy score of 97%**, 
+    - **recall score of 94% for class normal, and 98% for class pneumonia** 
+    - **f1 score of 94% for class normal, and 98% for class pneumonia** 
 
    
 ## Recommendations for use of CNN to classify x-ray images:
 ***
-* Stream-line the diagnosing process  quicker return time and greater patient satisfaction.
+* Stream-line the diagnosing process which leads to quicker return time and greater patient satisfaction.
 * Begin the treatment right away for patients classified as high-risk.
 * Have doctors to allocate time to go over the images that fall into the grey zone more rigorously, and for more demanding and complex procedures in general.
 
