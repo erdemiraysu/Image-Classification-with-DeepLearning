@@ -23,7 +23,7 @@
 * Below graph shows a sample image data before and after pre-processing:
 
 **Raw Images:**
-![RawImages](https://user-images.githubusercontent.com/61121277/214113785-859bb596-848a-4ec1-aa8d-f0c849146e1a.png)
+![RawImages](https://user-images.githubusercontent.com/61121277/214430135-ec55af63-9ae7-47b0-b4bb-90feefec8e56.png)
 
 **Processed Images:**
 ![ProcessedImages](https://user-images.githubusercontent.com/61121277/214377441-b4529e73-7e39-453f-b3cd-0cfbb4120e46.png)
@@ -57,7 +57,7 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
    
 ## Visualize Features:
 * Below is the visualization of the 25th channel for each of the activation layers of the CNN architecture. 
-* As can be seen later layers are more abstract representations. This demonstrates how the representations learned by CNN architectures become increasingly abstract with the depth of the layers.
+* As can be seen as the layers get deeper the representations learned by CNN become increasingly more abstract. 
 ![ActivationChannels](https://user-images.githubusercontent.com/61121277/214377645-737d9135-0297-459f-807f-ec541cca8591.png)
     
 ## Recommendations for use of CNN to classify x-ray images:
