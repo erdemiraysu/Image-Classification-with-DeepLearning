@@ -26,7 +26,7 @@
 ![RawImages](https://user-images.githubusercontent.com/61121277/214113785-859bb596-848a-4ec1-aa8d-f0c849146e1a.png)
 
 **Processed Images:**
-![ProcessedImages](https://user-images.githubusercontent.com/61121277/214109823-50860662-402e-41d2-a2c1-51c5223fcac1.png)
+![ProcessedImages](https://user-images.githubusercontent.com/61121277/214377441-b4529e73-7e39-453f-b3cd-0cfbb4120e46.png)
 
 ## Modeling
 ***
@@ -41,15 +41,9 @@ Several types of naural networks were built, tuned and validated:
 **Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
 * All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
+![CNN_train_val_accuracy](https://user-images.githubusercontent.com/61121277/214377459-78264939-0c07-4d02-aac2-3ce4282b54d6.png)
 
-
-
-
-
-* All models reached overall accuracy levels of 94-94% and recall values of 96-98% for the pneumonia cases for the tets set.  
-
-
-
+* All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.  ![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/214377538-db24f824-5c7e-4e6c-a823-d6afe2f3010a.png)
 
 **CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
@@ -57,8 +51,11 @@ Several types of naural networks were built, tuned and validated:
     - overall accuracy score of 97%, 
     - recall score of 94% for class normal, and 98% for class pneumonia 
     - f1 score of 94% for class normal, and 98% for class pneumonia
-
-   
+## Visualize Features:
+* Below is the visualization of the 25th channel for each of the activation layers. (Recall that there are more channels in later layers. 
+* Later layers are more abstract representations. This demonstrates how the representations learned by CNN architectures become increasingly abstract with the depth of the layers.
+![ActivationChannels](https://user-images.githubusercontent.com/61121277/214377645-737d9135-0297-459f-807f-ec541cca8591.png)
+    
 ## Recommendations for use of CNN to classify x-ray images:
 ***
 * Stream-line the diagnosing process which leads to quicker return time and greater patient satisfaction.
