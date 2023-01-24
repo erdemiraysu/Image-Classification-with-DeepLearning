@@ -40,10 +40,13 @@ Several types of naural networks were built, tuned and validated:
 ## Evaluation
 **Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
-* All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
+All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
+
 ![CompareModels_train_val_acc](https://user-images.githubusercontent.com/61121277/214378393-93dd8b02-2047-4cdb-981e-b8f51668751b.png)
 
-* All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.  ![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/214377538-db24f824-5c7e-4e6c-a823-d6afe2f3010a.png)
+All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.
+
+![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/214377538-db24f824-5c7e-4e6c-a823-d6afe2f3010a.png)
 
 **CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
