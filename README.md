@@ -41,19 +41,11 @@ Several types of naural networks were built, tuned and validated:
     - Transfer Learning with ResNest50V2
 
 ## Evaluation
-**Scoring Metric**: **Accuracy** was used to be evaluated by the model during training, and **recall** values especailly for the pneumonia class were taken into consideration for model evaluation during testing. 
+**Scoring Metric**: **Accuracy** was used to be evaluated by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation during testing. 
 
+All models performed exceptionally well.**CNN with Dropout regularization and a lower learning rate** gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
-## Evaluation
-***
-
-
-* **CNN with Dropout regularization** gives the best performance on both train (tells if model is confident in it’s learning) and test datasets (tells if the results are negeralizable to an unknown dataset). 
-* 
-* It gives Roc_Auc values of 88% (on Train) and 87% (on test), which is considered **GOOD**.
-
-
-* Results from the best fitting model on the test set are:
+* Results on the test set are:
     - **accuracy score of 79%**, 
     - **sensitivity/recall score of 79%** 
     - **specificity score of 82%** 
