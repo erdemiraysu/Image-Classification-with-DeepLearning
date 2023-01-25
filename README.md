@@ -53,6 +53,7 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
     - overall accuracy score of 97%, 
     - recall score of 94% for class normal, and 98% for class pneumonia 
     - f1 score of 94% for class normal, and 98% for class pneumonia
+
  ![Screen Shot 2023-01-25 at 1 56 14 PM](https://user-images.githubusercontent.com/61121277/214676539-dbcf2b6e-7737-4f6a-bf97-355a6f00a7f4.png)
    
 ## Visualize Features:
