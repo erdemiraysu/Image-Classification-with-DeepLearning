@@ -18,7 +18,6 @@
 - The data was split into train (80%), test (10%), validation (10%) sets.
 - All images are downsized to a size of 128 x 128 pixels.
 - Pixels values (0-255) normalized to 0-1.
-- Converted to Grayscale.
 
 * Below graph shows a sample image data before and after pre-processing:
 
