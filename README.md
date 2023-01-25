@@ -49,13 +49,14 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
 
 **CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
-* Using tuned CNN results on the test set were:
+* Using tuned CNN performance on the test set was:
     - overall accuracy score of 97%, 
     - recall score of 94% for class normal, and 98% for class pneumonia 
     - f1 score of 94% for class normal, and 98% for class pneumonia
+ ![Screen Shot 2023-01-25 at 1 56 14 PM](https://user-images.githubusercontent.com/61121277/214676539-dbcf2b6e-7737-4f6a-bf97-355a6f00a7f4.png)
    
 ## Visualize Features:
-* Below is the visualization of the 25th channel for each of the activation layers of the CNN architecture. 
+* Below is the visualization of a sample channel for each of the activation layers of the CNN architecture. 
 * As can be seen as the layers get deeper the representations learned by CNN become increasingly more abstract. 
 ![ActivationChannels](https://user-images.githubusercontent.com/61121277/214377645-737d9135-0297-459f-807f-ec541cca8591.png)
     
