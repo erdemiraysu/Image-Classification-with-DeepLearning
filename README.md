@@ -45,14 +45,13 @@ All models performed similarly well with no apparent signs of overfitting as see
 All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.
 ![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/215303772-c702e469-89d5-49cb-a0b1-b506b7be6123.png)
 
-**CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
+**ResNet50** was chosen as the final model since it gave the best performance on test dataset by missing only 9 pneumonia-positive cases out of 428, and 12 out of 159 normal cases. 
 
-* Using tuned CNN performance on the test set was:
+* Using ResNet50 performance on the test set was:
     - overall accuracy score of 96%, 
     - recall score of 92% for class normal, and 98% for class pneumonia 
     - f1 score of 93% for class normal, and 98% for class pneumonia
 <img width="596" alt="Screen Shot 2023-01-28 at 9 49 48 PM" src="https://user-images.githubusercontent.com/61121277/215303833-62f4a8da-9ac0-4e3c-9c63-4d34c60a9b54.png">
-
 
 ## Visualize Features:
 * Below is the visualization of a sample channel for each of the activation layers of teh dropout CNN architecture. 
