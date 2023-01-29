@@ -40,27 +40,25 @@ Several types of naural networks were built, tuned and validated:
 **Scoring Metrics**: **Accuracy** was used by the model during training, and **recall** values especially for the pneumonia class were taken into consideration for model evaluation on the test set. 
 
 All models performed similarly well with no apparent signs of overfitting as seen by the loss and accuracy trends for the training and validation sets:
-
-![CompareModels_train_val_acc](https://user-images.githubusercontent.com/61121277/214378393-93dd8b02-2047-4cdb-981e-b8f51668751b.png)
+![CompareModels_train_val_acc](https://user-images.githubusercontent.com/61121277/215303767-e5d89de7-0ad2-4db6-acf7-3c55b44241bb.png)
 
 All models reached overall accuracy levels of 94-95% and recall values of 97-98% for the pneumonia cases for the test set.
-
-![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/214377538-db24f824-5c7e-4e6c-a823-d6afe2f3010a.png)
+![CompareModels_ConfusionMatrices](https://user-images.githubusercontent.com/61121277/215303772-c702e469-89d5-49cb-a0b1-b506b7be6123.png)
 
 **CNN with dropout regularization and a lower learning rate** was chosen as the final model since it gave the best performance on test dataset by missing only 10 pneumonia-positive cases out of 428, and 9 out of 159 normal cases. 
 
 * Using tuned CNN performance on the test set was:
-    - overall accuracy score of 97%, 
-    - recall score of 94% for class normal, and 98% for class pneumonia 
-    - f1 score of 94% for class normal, and 98% for class pneumonia
+    - overall accuracy score of 96%, 
+    - recall score of 92% for class normal, and 98% for class pneumonia 
+    - f1 score of 93% for class normal, and 98% for class pneumonia
+<img width="596" alt="Screen Shot 2023-01-28 at 9 49 48 PM" src="https://user-images.githubusercontent.com/61121277/215303833-62f4a8da-9ac0-4e3c-9c63-4d34c60a9b54.png">
 
- ![Screen Shot 2023-01-25 at 1 56 14 PM](https://user-images.githubusercontent.com/61121277/214676539-dbcf2b6e-7737-4f6a-bf97-355a6f00a7f4.png)
-   
+
 ## Visualize Features:
-* Below is the visualization of a sample channel for each of the activation layers of the CNN architecture. 
+* Below is the visualization of a sample channel for each of the activation layers of teh dropout CNN architecture. 
 * As can be seen as the layers get deeper the representations learned by CNN become increasingly more abstract. 
-![ActivationChannels](https://user-images.githubusercontent.com/61121277/214377645-737d9135-0297-459f-807f-ec541cca8591.png)
-    
+![ActivationChannels](https://user-images.githubusercontent.com/61121277/215303865-1430d6c7-720d-4a60-9f36-695ff866ea98.png)
+
 ## Recommendations for use of CNN to classify x-ray images:
 ***
 * Stream-line the diagnosing process which leads to quicker return time and greater patient satisfaction.
