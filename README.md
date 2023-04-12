@@ -1,4 +1,4 @@
-# Image Classification with DeepLearning Project4
+# Image Classification with DeepLearning
 
 ## Overview
 ***
