@@ -71,13 +71,13 @@ All models reached overall accuracy levels of 94-95% and recall values of 97-98%
 * We could address the class imbalance issue using oversampling techniques.
 
 ## Repository Structure
-    .
-    ├── images 
-    ├── Notebook.ipynb     
-    ├── Notebook.pdf 
-    ├── Presentation.pdf                                             
-    └── README.md   
-
+ 
+    ├── images                         Images folder, containing all referenced image files
+    ├── Notebook.ipynb                 Main Jupyter notebook, contains analysis
+    ├── Notebook.pdf                   Pdf version of main Jupyter notebook
+    ├── Presentation.pdf               PDF Version of project presentation                                        
+    └── README.md                      The top-level README  
+    
 ## Contact Info:
 * Email: erdemiraysu@gmail.com
 * GitHub: [@erdemiraysu](https://github.com/erdemiraysu/)
